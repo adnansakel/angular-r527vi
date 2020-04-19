@@ -2,3 +2,12 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+<button (click)="test()">My button</button>
+<hello name="{{ result }}"></hello>
+<img [src]="selectedFile" height="200"> <br/>
+<input
+  style="display: none"
+  type="file" (change)="onFileChanged($event)"
+  #fileInput>
+<button (click)="fileInput.click()">Upload Image</button>
+<button (click)="getImageClass()">Classify Image</button>
